@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="FR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://bit.ly/3Tp3zyH">
+	<title>L'états de section</title>
+
+<style type="text/css">
+
+body{
+	font-family: "Arial", Gadget, sans-serif;
+	overflow-x: hidden;
+	background-attachment: fixed;
+  animation: animateBg 4s linear infinite;
+  background-image: linear-gradient(90deg,#f4e7b3,#ffceb0,#f6cfaf,#ffe5b7,#f4e7b3,#ffceb0);
+  background-size: 500% 100%;
+}
+
+@keyframes animateBg {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 0%; }
+}
+
+body::-webkit-scrollbar {
+    width: 17px;
+    background-color: #e1b480;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #634835;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:active {
+    background-color: #301b0b;
+    border-radius: 10px;
+}
+
+ul {
+	text-align: -webkit-center;
+  padding:0;
+}
+
+select {
+	text-align: center;
+	width: 220px;
+	outline: unset;
+	border: solid 3px #7d432b;
+  border-radius: 15px;
+  background: none;
+  transition-duration: 500ms;
+  transition-property: all;
+}
+
+select:hover {
+	padding: 5px;
+	width: 280px;
+  background: #ffeec7;
+  font-weight: 600;
+  transition-duration: 500ms;
+  transition-property: all;
+}
+
+option {
+  background: #ffeec7;
+}
+
+.pics {
+	border-radius:10px;
+	height: 500px;
+}
+
+#imgs {
+	border-radius:10px;
+	overflow: hidden;
+	margin: 20px 0px;
+}
+
+.header {
+	display: grid;
+	grid-gap: 1%;
+	grid-template-columns: 250px auto;
+	align-items: center;
+}
+
+.titleFont {
+	border-radius: 20px;
+	margin: 0px;
+	margin-bottom: 5%;
+	text-align: center;
+  font-size: 80px;
+	text-transform: capitalize;
+	color: #e0a14a;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-shadow: 0px 0px 0 rgb(216,153,66),
+	             1px 0px 0 rgb(207,144,57),
+	             2px 0px 0 rgb(199,136,49),
+	             3px 0px 0 rgb(191,128,41),
+	             4px 0px 0 rgb(182,119,32),
+	             5px 0px 0 rgb(174,111,24),
+	             6px 0px 0 rgb(166,103,16),
+	             7px 0px 0 rgb(157,94,7),
+	             8px 0px 0 rgb(149,86,0),
+	             9px 0px 0 rgb(141,78,0),
+	             10px 0px 0 rgb(132,69,0),
+	             11px 0px 0 rgb(124,61,0),
+	             12px 0px  0 rgb(116,53,0),
+	             13px 0px 12px rgba(0,0,0,1),
+	             13px 0px 1px rgba(0,0,0,0.5),
+	             0px 0px 12px rgba(0,0,0,.2);
+}
+
+
+.logo{
+	width: 100%;
+}
+
+.selectors_lable {
+	display:contents;
+	font-weight:600;
+	color:#5f3627;
+}
+
+.selectors {
+	display: grid;
+	row-gap: 8px;
+	grid-template-columns: 230px auto;
+}
+
+.L_1 {
+	grid-area: logo_1;
+}
+
+.L_2 {
+	grid-area: logo_2;
+}
+
+.L_3 {
+	grid-area: logo_3;
+}
+
+.L_4 {
+	grid-area: logo_4;
+}
+
+.logos_container {
+	padding: 15px;
+	border-radius: 20px;
+	background: radial-gradient(circle, rgb(108 84 48 / 0%) 0%, rgb(255 255 255 / 20%) 136%);
+	display: grid;
+  grid-template-columns: 62% 32%;
+  grid-template-areas:
+    'logo_1 logo_2'
+    'logo_1 logo_3'
+    'logo_1 logo_4';
+}
+
+.loading_hidden {
+	opacity: 0; 
+	transition-duration: 1s;
+	transition-delay:7s;
+}
+
+.btn {
+  border-radius: 40px;
+  background-color: #ffe6b5;
+  font-size: 16px;
+  border: none;
+  padding: 5px 30px;
+  transition-duration: 0.4s;
+}
+.btn:hover {
+  font-size: 18px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="header">
+	<div class='logos_container'>
+
+		<a class="L_1" href="https://bit.ly/3CyGwuF" target="_blank" title="Conseil Départemental de la Vendée - CD 85"><img class="logo L_1" src="https://bit.ly/3MxYv9d"></a>
+
+		<a class="L_2" href="https://anr.fr/" target="_blank" title="Agence Nationale de la Recherche"><img class="logo L_2" src="https://bit.ly/3MDuoxe"></a>	
+
+		<a class="L_3" href="https://bit.ly/3yD3jVa" target="_blank" title="Institut National de Recherches Archéologiques Préventives"><img class="logo L_3" src="https://bit.ly/3rWavrK"></a>
+
+		<a class="L_4" href="https://bit.ly/3EHa2AX" target="_blank" title="Université Rennes 2"><img class="logo L_4" src="https://bit.ly/3EHagbh"></a>
+
+	</div>
+	<p class="titleFont">états de sections</p>
+</div>
+<br>
+<br>
+<br>
+<div class="selectors">
+	<p class="selectors_lable">Sélectionnez une commune:</p>
+	<select id="com"></select>
+
+	<p class="selectors_lable">Sélectionnez une section:</p>
+	<select id="sec">
+		<option selected>Aucune section sélectionnée</option>
+	</select>
+
+	<p class="selectors_lable">Sélectionnez une image:</p>
+	<select id="page">
+		<option selected>Aucune image sélectionnée</option>
+	</select>
+
+	<span id='nb_pg'> 
+	</span>
+	<span id='loading' class="loading_hidden"> 
+	</span>
+	<button class="btn">
+		<a href="https://arcg.is/1CDKHP1" target="_blank" class="selectors_lable" style="color:#bc5f5f">Ouvrir la page dans un nouvel onglet
+		</a>
+	</button>
+</div>
+
+<div id="imgs">
+</div>
+
+<script type="text/javascript" src="https://bit.ly/3g5dKKA"></script>
+<script type="text/javascript" src="https://bit.ly/3RVh5sY"></script>
+<script type="text/javascript">
+
+// sections files info (communes/ sections per commune/ number of JPG files per section) 
+const etat_sec_files = 
+	{ 
+		'communes' :[
+			["auzay","Auzay"],
+			["chaix","Chaix"],
+			["fontaines","Fontaines"],
+			["le-poire-sur-velluire","Le Poire-Sur-Velluire"],
+			["hermenault","L'Hermenault"],
+			["longeves","Longeves"],
+			["orbrie","L'orbrie"],
+			["montreuil","Montreuil"],
+			["nalliers","Nalliers"],
+			["petosse","Petosse"],
+			["pissotte","Pissotte"],
+			["pouille","Pouillé"],
+			["saint-martin-de-fraigneau","Saint-Martin-de-Fraigneau"],
+			["saint-michel-le-cloucq","Saint-Michel-Le-Cloucq"],
+			["serigne","Sérigné"],
+			["velluire","Velluire"]
+		],
+
+		'sections' :{
+			'auzay':['A','B','C','D','E','F','G','H','I','J'],
+			'chaix':['A','B','C'],
+			'fontaines':['A','B','C','D'],
+			'le-poire-sur-velluire':['A','B','C','D','E','F','G','H','I','J'],
+			'hermenault':['A','B','C','D','E'],
+			'longeves':['A','B','C','D','E'],
+			'orbrie':['A','B','C'],
+			'montreuil':['A','B','C','D','E','F','G'],
+			'nalliers':['A','B','C','D','E','F','G','H','I','K','L','M','N','O','P','Q','R','S'],
+			'petosse':['A','B','C','D','E'],
+			'pissotte':['A','B','C','D','E','F'],
+			'pouille':['A','B','C','D','E','F','G','H','I'],
+			'saint-michel-le-cloucq':['A','B','C','D','E','F','G','H','J','K','L'],
+			'saint-martin-de-fraigneau':['A','B','C','D','E'],
+			'serigne':['A','B','C','D','E','F','G','H','I','K','L'],
+			'velluire':['A','B','C','D','E']
+		},
+ 
+		'nb_jpg_files' : {
+			'auzay':{'A':'25','B':'39','C':'49','D':'41','E':'36','F':'55','G':'52','H':'105','I':'50','J':'47'},
+			'chaix':{'A':'90','B':'62','C':'51'},
+			'fontaines':{'A':'46','B':'49','C':'36','D':'101'},
+			'le-poire-sur-velluire':{'A':'16','B':'35','C':'103','D':'67','E':'80','F':'62','G':'5','H':'61','I':'37','J':'57'},
+			'hermenault':{'A':'30','B':'46','C':'50','D':'35','E':'39'},
+			'longeves':{'A':'40','B':'110','C':'82','D':'102','E':'47'},
+			'orbrie':{'A':'4','B':'36','C':'45'},
+			'montreuil':{'A':'57','B':'40','C':'44','D':'67','E':'91','F':'111','G':'80'},
+			'nalliers':{'A':'15','B':'21','C':'13','D':'25','E':'18','F':'14','G':'21','H':'23','I':'18','K':'15','L':'14','M':'18','N':'17','O':'14','P':'18','Q':'23','R':'9','S':'21'},
+			'petosse':{'A':'32','B':'51','C':'39','D':'50','E':'45'},
+			'pissotte':{'A':'12','B':'32','C':'57','D':'35','E':'59','F':'24'},
+			'pouille':{'A':'28','B':'33','C':'40','D':'42','E':'36','F':'27','G':'34','H':'50','I':'27'},
+			'saint-michel-le-cloucq':{'A':'22','B':'10','C':'55','D':'22','E':'11','F':'70','G':'42','H':'74','J':'55','K':'37','L':'34'},
+			'saint-martin-de-fraigneau':{'A':'18','B':'29','C':'22','D':'28','E':'25'},
+			'serigne':{'A':'48','B':'41','C':'37','D':'23','E':'28','F':'35','G':'34','H':'45','I':'23','K':'45','L':'28'},
+			'velluire':{'A':'72','B':'86','C':'34','D':'39','E':'13'}
+		}
+	};
+
+
+
+// creating a drop-list with all the Communes
+$(document).ready(function(){
+	var com_dropList_html_str = "<option selected>Aucune commune sélectionnée</option>\n";
+	for (i = 0; i < etat_sec_files['communes'].length; i++) {
+		com_dropList_html_str += "<option value='"+etat_sec_files['communes'][i][0]+"'>"+etat_sec_files['communes'][i][1]+"</option>\n"
+	};
+	$('#com').html(com_dropList_html_str);
+});
+
+
+
+// creating a drop-list of all the Sections in each Communes
+$('#com').change(function() {
+	var com_dropList_val = $('#com').val();
+	var com_sec_selc = "<option selected>Aucune section sélectionnée</option>\n";
+	var pg_non_selc = "<option selected>Aucune image sélectionnée</option>\n";
+	for (i = 0; i < etat_sec_files['sections'][com_dropList_val].length; i++) {
+		com_sec_selc += "<option>"+etat_sec_files['sections'][com_dropList_val][i]+"</option>\n"
+	};
+	$('#sec').html(com_sec_selc);
+	$('#page').html(pg_non_selc);
+});
+
+
+
+
+
+// creating a drop-list for for the pages numbers
+ $('#sec').change(function() {
+
+
+	var com_val = $('#com').val();
+	var sec_val = $('#sec').val();
+	var files_nb = etat_sec_files['nb_jpg_files'][com_val][sec_val];
+	var pg_nb_liste = "<option value='empty' selected>Aucune image sélectionnée</option>\n"
+
+
+	// send number of "images" in the selected section to the <span id='nb_pg'> block
+	$('#nb_pg').html(`<p class="selectors_lable">Cette section contient ${files_nb} images.</p>`);
+
+	// injecting the <option>s to the <select>
+	for (var i = 0; i <files_nb ; i++) {
+	pg_nb_liste+=`<option value='${i}'>L'image N°${i+1}</option>\n`;
+	};
+	$('#page').html(pg_nb_liste);
+ });
+
+
+
+
+
+
+// loading the image once the Com, the Sec, the "image" are selected
+// demo of the viewer https://fengyuanchen.github.io/viewerjs/
+// documentation of the viewer.js library https://github.com/fengyuanchen/viewerjs
+
+$('#page').change(function() {
+	var com_val = $('#com').val();
+	var sec_val = $('#sec').val();
+	var page_val = $('#page').val();
+
+	if (page_val == 'empty') {
+		//if the option selected is "Aucune page sélectionnée", js do nothing
+	} else {
+
+		// loading message 
+		$('#loading').toggleClass('loading_hidden');
+		$('#loading').html(`<p class="selectors_lable">L'image est en cours de chargement, veuillez patienter! <img src='https://bit.ly/3g7nK6f'style="height:15px"></p>`);
+
+		//laoding the targeted image
+		var str="<ul id='image' class='imgUl'><li><img onload='loaded()' src='https://staticvendee.blob.core.windows.net/web/Archives_Etats_Section/"+com_val+"/"+sec_val+"/"+page_val+".jpg' class='pics'></li></ul>";
+		$('#imgs').html(str);
+
+
+		// setting the Viwer.js options
+		var viewer = new Viewer(document.getElementById('image'), {
+		  title:false,
+		  navbar:false,
+		  toolbar:false,
+		  inline: true,
+		  zoomRatio:1,
+		  maxZoomRatio:2.5,
+		  minZoomRatio:0.1,  
+		  viewed() {
+		    viewer.zoomTo(0.1);
+		  }
+		});
+	}
+});
+
+
+
+
+
+
+
+
+// change the 'laoding' note to 'loaded' 
+function loaded() {
+	$('#loading').toggleClass('loading_hidden');
+	$('#loading').html(`<p class='selectors_lable'>L'image est chargée.</p><br><img src='https://bit.ly/3g8uy3t' style='margin:10px 0 0 55px;height:40px;'>`);
+}
+
+
+
+</script>
+</body>
+</html>
